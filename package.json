@@ -3,7 +3,7 @@
   "displayName": "Betty",
   "publisher": "moufidayoub11",
   "description": "This is an extension for real time betty errors/warnings highlighting",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "engines": {
     "vscode": "^1.81.0"
   },
