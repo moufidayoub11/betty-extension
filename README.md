@@ -31,6 +31,10 @@ betty-extension doesn't require any additional configuration. It seamlessly inte
 - Betty not found bug fixed
 - Minor improvements
 
+### 2.1.0
+
+- Older versions
+
 ## Known Issues
 
 - No known issues at the moment. If you encounter any problems or have suggestions, please report them on [GitHub Issues](https://github.com/moufidayoub/betty-extension/issues).
