@@ -5,7 +5,7 @@ Betty extension is a Visual Studio Code extension that helps you identify and ha
 
 ![Example of betty-extension in action](https://i.imgur.com/8ZL4UEB.gif)
 
-- **Real-time Error/Warning Highlighting:** As you code or save your files, betty-extension will automatically analyze your code and highlight lines with Betty coding style and documentation errors and warnings.
+- **Real-time Error/Warning Highlighting:** As you code and save your files, betty-extension will automatically analyze your code and highlight lines with Betty coding style and documentation errors and warnings.
 
 - **Hover Over to View Messages:** Hover over the highlighted lines to view detailed error and warning messages, helping you quickly identify and fix issues.
 
@@ -21,10 +21,14 @@ betty-extension doesn't require any additional configuration. It seamlessly inte
 
 ## Release Notes
 
-### 1.0.0
+### 0.0.1
 
 - Initial release of betty-extension.
 
 ## Known Issues
 
 - No known issues at the moment. If you encounter any problems or have suggestions, please report them on [GitHub Issues](https://github.com/moufidayoub/betty-extension/issues).
+
+## License
+
+This project is licensed under the GPL License - see the [LICENSE](LICENSE) file for details.

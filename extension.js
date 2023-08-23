@@ -4,6 +4,8 @@ const { exec } = require('child_process');
 const errorMessages = {};
 const warningMessages = {};
 
+var showedError = false;
+
 const statusBar = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Right, 100);
 
 const errorDecorationType = vscode.window.createTextEditorDecorationType({
@@ -60,7 +62,16 @@ function checkAndHighlight(document) {
 	const filename = document.fileName.replace(/^.*[\\\/]/, '');
 	exec(`betty "${filename}"`, { cwd: document.fileName.replace(filename, "") }, (error, stdout, stderr) => {
 		const full_output = stderr + stdout;
-
+		if (full_output.includes("betty: not found"))
+		{
+			if (!showedError)
+			{
+				showedError = true;
+				vscode.window.showErrorMessage('Betty: betty not found');
+			}
+			return;
+		}
+		showedError = false;
 		for (const line in errorMessages)
 			delete errorMessages[line];
 		for (const line in warningMessages)
