@@ -4,7 +4,7 @@ This is the README for your extension "betty-extension." It is an extension for 
 
 ## Features
 
-![Example of betty-extension in action](images/betty-in-work.gif)
+![Example of betty-extension in action](https://i.imgur.com/8ZL4UEB.gifv)
 
 - **Real-time Error/Warning Highlighting:** As you code or save your files, betty-extension will automatically analyze your code and highlight lines with Betty coding style and documentation errors and warnings.
 
