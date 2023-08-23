@@ -3,11 +3,11 @@
   "displayName": "Betty",
   "publisher": "moufidayoub11",
   "description": "This is an extension for real time betty errors/warnings highlighting",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.81.0"
   },
-  "icon": "https://i.imgur.com/MXgVmLB.png",
+  "icon": "assets/icon.png",
   "repository": {
 	"type": "git",
 	"url": "https://github.com/moufidayoub11/betty-extension.git"
