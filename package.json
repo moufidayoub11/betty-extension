@@ -7,6 +7,10 @@
   "engines": {
     "vscode": "^1.81.0"
   },
+  "repository": {
+	"type": "git",
+	"url": "https://github.com/moufidayoub11/betty-extension.git"
+  },
   "categories": [
     "Other"
   ],
