@@ -34,6 +34,13 @@ betty-extension doesn't require any additional configuration. It seamlessly inte
 ## Known Issues
 
 - No known issues at the moment. If you encounter any problems or have suggestions, please report them on [GitHub Issues](https://github.com/moufidayoub/betty-extension/issues).
+  
+## Contact Information
+
+Feel free to reach out with any questions, feedback, or support requests:
+
+- **Email:** moufidayoub883@gmail.com
+- **Discord:** moufidayoub11
 
 ## License
 
