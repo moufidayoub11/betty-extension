@@ -22,9 +22,14 @@ betty-extension doesn't require any additional configuration. It seamlessly inte
 
 ## Release Notes
 
-### 0.0.1
+### 1.0.0
 
 - Initial release of betty-extension.
+### 2.0.0
+
+- Added Icon
+- Betty not found bug fixed
+- Minor improvements
 
 ## Known Issues
 
