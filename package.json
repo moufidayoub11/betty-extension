@@ -1,0 +1,54 @@
+{
+  "name": "betty-extension",
+  "displayName": "Betty",
+  "publisher": "moufidayoub11",
+  "description": "This is an extension for real time betty errors/warnings highlighting",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.81.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished",
+    "onLanguage:c"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "betty-extension.checkAndHighlight",
+        "title": "Betty"
+      }
+    ],
+    "languages": [
+      {
+        "id": "c",
+        "extensions": [
+          ".c",
+          ".h"
+        ]
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "20.2.5",
+    "@types/vscode": "^1.81.0",
+    "@vscode/test-electron": "^2.3.2",
+    "eslint": "^8.41.0",
+    "glob": "^8.1.0",
+    "mocha": "^10.2.0",
+    "typescript": "^5.1.3"
+  },
+  "dependencies": {
+    "child_process": "^1.0.2"
+  }
+}
