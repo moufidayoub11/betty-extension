@@ -1,51 +1,65 @@
 # Betty Extension
-Betty extension is a Visual Studio Code extension that helps you identify and handle Betty coding style and documentation errors and warnings in real-time.
-<img src="https://i.imgur.com/iEhoUfL.png" alt="Image Description" width="100%">
-
+Betty Extension is a Visual Studio Code extension that helps you identify and handle Betty coding style and documentation errors and warnings in real-time.
+<img src="https://i.imgur.com/iEhoUfL.png" alt="Betty Extension Interface" width="100%">
 
 ## Features
-<img src="https://i.imgur.com/8ZL4UEB.gif" alt="Image Description" width="50%">
+<img src="https://i.imgur.com/8ZL4UEB.gif" alt="Betty Extension Features" width="50%">
 
-- **Real-time Error/Warning Highlighting:** As you code and save your files, betty-extension will automatically analyze your code and highlight lines with Betty coding style and documentation errors and warnings.
+### New in Latest Release 🎉🔥
 
-- **Hover Over to View Messages:** Hover over the highlighted lines to view detailed error and warning messages, helping you quickly identify and fix issues.
+- 🌟 **Automatic Betty Fixes:** Tired of manual corrections? Our latest update auto-fixes some Betty errors for you. Just click 'Quick Fix,' and voila!
+- **Toggle Shortcut:** Instantly toggle the Betty extension on or off with the shortcut `(Ctrl+Alt+A)`.
+- **Efficient and Smart:** Our revamped, clean code is faster and smarter—no spaghetti code here!
+- **Integrated Warnings:** We now use VS Code's built-in diagnostic tools for more streamlined error and warning displays.
+- **Error Visibility:** Never miss an error again! Issues are highlighted at the top of your file and in the problem terminal.
+
+### Previously Existing Features 🛠
+
+- **Instant Alerts:** The Betty extension constantly monitors your code, providing instant alerts for any errors or warnings.
+- **Error Details:** Hover over any error, and we'll provide detailed info and a 'Quick Fix' option if available.
 
 ## Requirements
 
-Before using betty-extension, ensure you have the following requirements installed:
+Before using the Betty extension, ensure you have the following installed:
 
-- [Betty Style Checker](https://github.com/alx-tools/Betty) - This extension relies on the Betty Style Checker for code analysis. Make sure it's installed and configured on your system.
+- [Betty Style Checker](https://github.com/alx-tools/Betty) - This extension depends on the Betty Style Checker for code analysis. Ensure it's configured on your system.
 
 ## Extension Settings
 
-betty-extension doesn't require any additional configuration. It seamlessly integrates with your Visual Studio Code environment to provide real-time analysis and highlighting.
+No additional configuration needed! The Betty extension works seamlessly with your VS Code setup.
 
-## Release Notes
+## Release Notes 📘
 
-### 1.0.0
+### Version 3.0.0 (New)
 
-- Initial release of betty-extension.
-### 2.0.0
+- **Shortcut Toggle:** Added a `(Ctrl+Alt+A)` shortcut for dynamic enable/disable.
+- **OOP Refactoring:** Redesigned the codebase using Object-Oriented Programming for modular, scalable, and optimized performance.
+- **Diagnostic Class Integration:** Switched to VS Code's Diagnostic API for a consistent and integrated user experience.
+- **Enhanced Error Display:** Errors and warnings now appear in VS Code's 'Problems' terminal and at the top of the active file.
+- **Automated Betty Error Fixes:** Implemented algorithms to identify and auto-correct certain Betty errors with a single command.
 
-- Added Icon
-- Betty not found bug fixed
+### Previous Versions
+
+#### 2.1.0
+- Older versions
+
+#### 2.0.0
+- Added icon
+- Fixed 'Betty not found' bug
 - Minor improvements
 
-### 2.1.0
-
-- Older versions
+#### 1.0.0
+- Initial release
 
 ## Known Issues
 
-- No known issues at the moment. If you encounter any problems or have suggestions, please report them on [GitHub Issues](https://github.com/moufidayoub/betty-extension/issues).
+No known issues at the moment. For problems or suggestions, please report them on [GitHub Issues](https://github.com/moufidayoub/betty-extension/issues).
   
 ## Contact Information
-
-Feel free to reach out with any questions, feedback, or support requests:
 
 - **Email:** moufidayoub883@gmail.com
 - **Discord:** moufidayoub11
 
 ## License
 
-This project is licensed under the GPL License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the GPL License. See the [LICENSE](LICENSE) file for details.
