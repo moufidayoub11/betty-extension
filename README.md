@@ -3,7 +3,7 @@ Betty Extension is a Visual Studio Code extension that helps you identify and ha
 <img src="https://i.imgur.com/iEhoUfL.png" alt="Betty Extension Interface" width="100%">
 
 ## Features
-<img src="https://i.imgur.com/8ZL4UEB.gif" alt="Betty Extension Features" width="50%">
+<img src="https://i.imgur.com/QbHgdH0.gif" alt="Image Description" width="50%">
 
 ### New in Latest Release 🎉🔥
 
