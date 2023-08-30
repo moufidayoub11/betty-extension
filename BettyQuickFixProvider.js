@@ -146,7 +146,7 @@ function addNewLineAfterVarDeclaration(document, fix, range) {
 		const line = document.lineAt(i);
 		const nextLine = document.lineAt(i+1);
 		const varDeclarationMatch = line.text.match(regex);
-		if (nextLine && nextLine.text.length != 0 && varDeclarationMatch) {
+		if (varDeclarationMatch && nextLine && nextLine.text.length != 0 && nextLine.text != "{") {
 			const position = new vscode.Position(i, line.text.length);
 			fix.edit.insert(document.uri, position, '\n');
 		}
