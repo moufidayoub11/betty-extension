@@ -119,6 +119,7 @@ const errorFixingFunctions = {
 function addMissingSemicolon(document, fix, range) {
     // Your code to add a missing semicolon
 }
+```
 
 ## Contact Information
 
