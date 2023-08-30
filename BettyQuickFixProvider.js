@@ -36,8 +36,7 @@ class BettyQuickFixProvider {
 				.find(([error]) => diagnostic.message.includes(error));
 			if (fixToAdd) {
 				const [error, fixingFunction] = fixToAdd;
-				console.log(error)
-				const fix = new vscode.CodeAction(error, vscode.CodeActionKind.QuickFix);
+				const fix = new vscode.CodeAction("Fix " + error, vscode.CodeActionKind.QuickFix);
 				fix.edit = new vscode.WorkspaceEdit();
 				fixingFunction(document, fix, range);
 				codeActions.push(fix);
@@ -64,27 +63,21 @@ class BettyQuickFixProvider {
 	}
 }
 
-/**
- * Add parentheses to return statements.
- * 
- * @param {vscode.TextDocument} document - The active text document.
- * @param {vscode.CodeAction} fix - The code action to populate.
- * @param {vscode.Range|null} range - The range to consider, or null for the whole document.
- */
 function addParenthesesToReturn(document, fix, range) {
-	var startLine = range ? range.start.line : 0;
-	var endLine = range ? range.end.line : document.lineCount - 1;
-	for (let i = startLine; i <= endLine; i++) {
-		const line = document.lineAt(i);
-		const returnMatch = line.text.match(/return\s+(.*);/);
-		if (returnMatch && !returnMatch[1].startsWith('(') && !returnMatch[1].endsWith(')')) {
-			const startPos = line.text.indexOf('return') + 'return'.length;
-			const endPos = startPos + returnMatch[1].length + 1;
-			const replaceRange = new vscode.Range(new vscode.Position(i, startPos), new vscode.Position(i, endPos));
-			const newValue = ` (${returnMatch[1]})`;
-			fix.edit.replace(document.uri, replaceRange, newValue);
-		}
-	}
+    var startLine = range ? range.start.line : 0;
+    var endLine = range ? range.end.line : document.lineCount - 1;
+    for (let i = startLine; i <= endLine; i++) {
+        const line = document.lineAt(i);
+        const returnMatch = line.text.match(/return(\s+)(.*);/);
+        if (returnMatch && !returnMatch[2].startsWith('(') && !returnMatch[2].endsWith(')')) {
+            const whiteSpaces = returnMatch[1].length; // Number of whitespaces
+            const startPos = line.text.indexOf('return') + 'return'.length;
+            const endPos = startPos + returnMatch[2].length + whiteSpaces;
+            const replaceRange = new vscode.Range(new vscode.Position(i, startPos), new vscode.Position(i, endPos));
+            const newValue = ` (${returnMatch[2]})`;
+            fix.edit.replace(document.uri, replaceRange, newValue);
+        }
+    }
 }
 
 /**
