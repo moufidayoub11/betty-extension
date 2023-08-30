@@ -40,9 +40,6 @@ No additional configuration needed! The Betty extension works seamlessly with yo
 
 ### Previous Versions
 
-#### 2.1.0
-- Older versions
-
 #### 2.0.0
 - Added icon
 - Fixed 'Betty not found' bug
