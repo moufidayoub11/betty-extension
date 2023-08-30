@@ -54,7 +54,72 @@ No additional configuration needed! The Betty extension works seamlessly with yo
 ## Known Issues
 
 No known issues at the moment. For problems or suggestions, please report them on [GitHub Issues](https://github.com/moufidayoub/betty-extension/issues).
-  
+
+## How to Contribute to the Quick Fix Feature 🛠️
+
+Contributing to the Quick Fix feature is a great way to improve the Betty Extension for everyone. Follow the steps below to get started:
+
+### Prerequisites
+
+- Familiarity with JavaScript and Node.js
+- Visual Studio Code installed on your machine
+- A fork of the [Betty Extension repository](https://github.com/moufidayoub/betty-extension)
+
+### Steps
+
+1. **Clone Your Fork**: Clone your forked repository to your local machine.
+
+    ```bash
+    git clone https://github.com/YOUR_USERNAME/betty-extension.git
+    ```
+
+2. **Navigate to the Quick Fix File**: Open the project in VS Code and navigate to the file that handles the Quick Fix feature (`BettyQuickFixProvider.js` or equivalent).
+
+3. **Add Your Error Message and Fixing Function**: Locate the `errorFixingFunctions` object. Add a new key-value pair where the key is the error message you want to handle, and the value is the function that handles it.
+
+    ```javascript
+    const errorFixingFunctions = {
+        // ...existing error handlers
+        'your new error message': yourFixingFunction,
+    };
+    ```
+
+4. **Implement Your Fixing Function**: Write the function that will fix the error. Make sure to follow the existing coding style and guidelines.
+
+    ```javascript
+    function yourFixingFunction(document, fix, range) {
+        // Your code here
+    }
+    ```
+
+5. **Test Your Changes**: Before submitting a pull request, make sure to test your changes thoroughly.
+
+6. **Commit and Push**: Commit your changes and push them to your forked repository.
+
+    ```bash
+    git add .
+    git commit -m "Added quick fix for 'your new error message'"
+    git push origin main
+    ```
+
+7. **Create a Pull Request**: Go to the GitHub page of your forked repository and create a new pull request.
+
+### Example
+
+Here's a simple example to demonstrate how to add a new quick fix for the error message "missing semicolon":
+
+```javascript
+// Add to errorFixingFunctions object
+const errorFixingFunctions = {
+    // ...existing error handlers
+    'missing semicolon': addMissingSemicolon,
+};
+
+// Implement the fixing function
+function addMissingSemicolon(document, fix, range) {
+    // Your code to add a missing semicolon
+}
+
 ## Contact Information
 
 - **Email:** moufidayoub883@gmail.com
